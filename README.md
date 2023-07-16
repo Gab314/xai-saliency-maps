@@ -17,6 +17,8 @@ First introduced in Zeiler and Fergus, “Visualizing and Understanding Convolut
 
 ## Saliency
 
+![Occlusion](./images/saliency_1.png)
+
 First introduced in Simonyan, Vedaldi, and Zisserman, “Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps”, ICLR Workshop 2014, this approach introduced a technique that will generate an image map which maximizes the output score.
 
 ### We can use Tensorflow GradientTape():
@@ -26,6 +28,8 @@ First introduced in Simonyan, Vedaldi, and Zisserman, “Deep Inside Convolution
 3. Calculate the loss gradient with respect to the original image.
 
 ## Occlusion
+
+![Occlusion](./images/occlusion_1.png)
 
 1. Adding an occlusion map in the original picture.
 2. Calculating the amount of error that is added in the prediction.
@@ -45,6 +49,10 @@ If you find this code useful for your research, please cite the following:
   howpublished = {\url{https://github.com/Gab314/xai-saliency-maps}},
 }
 ```
+
+## References
++ [Visualizing and Understanding Convolutional Networks](https://arxiv.org/abs/1311.2901)
++ [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](https://arxiv.org/abs/1312.6034)
 
 ## Connect with me
 
